@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7FFE5;
+    height: 100vh;
+}
+header{
+    font-size: 60px;
+    font-family: 'Lato';
+}
+
+.start-btn{
+    width: 200px;
+    height: 60px;
+    font-size: 40px;
+    font-family: 'Lato';
+    border: 2px solid black;
+    background-color: #A0C49D;
+}
+.start-btn:hover{
+    cursor: pointer;
+}
+.start-btn:active{
+    transform: scale(.92);
+    transition: ease 0.07s all;
+}
+.start-btn:not(:active){
+    transform: scale(1);
+    transition: ease 0.07s all;
+}
+
+.box-container{
+    display: none;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+.box-container > div{
+    border: 2px solid #A0C49D;
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.symbolX{
+    font-family: 'Lato';
+    font-size: 80px;
+    color: #00539C;
+    
+    justify-content: center;
+    align-items: center;
+}
+.symbolO{
+    font-family: 'Lato';
+    font-size: 80px;
+    color: #880808;
+
+    justify-content: center;
+    align-items: center;
+}
