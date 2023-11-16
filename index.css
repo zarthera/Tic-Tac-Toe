@@ -5,12 +5,13 @@ body{
     gap: 50px;
     align-items: center;
     justify-content: center;
-    background-color: #F7FFE5;
-    height: 100vh;
+    background-color: #4F6F52;
+    height: 98vh;
 }
 header{
     font-size: 60px;
     font-family: 'Lato';
+    color: #ECE3CE;
 }
 
 .start-btn{
@@ -18,8 +19,9 @@ header{
     height: 60px;
     font-size: 40px;
     font-family: 'Lato';
-    border: 2px solid black;
-    background-color: #A0C49D;
+    border: 3px solid #3A4D39;
+    background-color: rgb(82, 121, 81);
+    color: #ECE3CE
 }
 .start-btn:hover{
     cursor: pointer;
@@ -50,7 +52,7 @@ header{
 .symbolX{
     font-family: 'Lato';
     font-size: 80px;
-    color: #00539C;
+    color: #053055;
     
     justify-content: center;
     align-items: center;
@@ -62,4 +64,36 @@ header{
 
     justify-content: center;
     align-items: center;
+}
+
+.congratulations, .tie-game{
+    color: #ECE3CE;
+    font-size: 20px;
+    font-family: 'Lato';
+}
+.replay-btn{
+    font-size: 25px;
+    font-family: 'Lato';
+    border: 3px solid #3A4D39;
+    background-color: rgb(82, 121, 81);
+    color: #ECE3CE;
+    width: 160px;
+    height: 45px;
+}
+.replay-btn:hover{
+    cursor: pointer;
+}
+.replay-btn:active{
+    transform: scale(.92);
+    transition: ease 0.07s all;
+}
+.replay-btn:not(:active){
+    transform: scale(1);
+    transition: ease 0.07s all;
+}
+
+.player1-text, .player2-text{
+    font-size: 26px;
+    font-family: 'Lato';
+    color: #ECE3CE;
 }
